@@ -37,7 +37,7 @@ toolbar#nav-bar {
 
 .tab-background:is([selected],
 [multiselected]) {
-    background-color: #d4be98!important;
+    background-color: #161616!important;
 }
 
 #TabsToolbar #firefox-view-button:hover:not([open]) > .toolbarbutton-icon,
@@ -50,7 +50,7 @@ toolbar#nav-bar {
     color: #aa9e7a!important;
 }
 .tabbrowser-tab[selected] {
-    color: #101010!important;
+    color: #d4be98!important;
 }
 
 .tab-label-container[textoverflow]:not([pinned]),
