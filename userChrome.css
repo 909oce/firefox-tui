@@ -10,7 +10,8 @@
 }
 
 toolbar#nav-bar {
-	background-color: #101010!important;
+  border: none!important;
+  background-color: #101010!important;
 }
 
 #tabbrowser-tabs {
@@ -273,4 +274,15 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
 /*temp fix for offscreen in hyprland*/
 panel#notification-popup {
 	margin-right: -1000px!important;
+}
+
+:root[inFullscreen="true"] {
+  #appcontent, #navigator-toolbox, #sidebar-box {
+    margin: 0px;
+    border: none!important;
+    padding: 0px!important;
+  }
+  #appcontent::before, #sidebar-box::before, #navigator-toolbox::before {
+    display:none!important;
+  }
 }
