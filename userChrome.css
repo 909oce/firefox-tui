@@ -3,7 +3,7 @@
 :root {
 	--tab-font-size: 12px;
 	--tab-font-family: Terminus, sans-serif;
-	--max-tab-width: 100%;
+	--max-tab-width: 25%;
 	--tab-height: 20px;
 	--toolbar-start-end-padding: 2px!important;
 	--urlbar-container-height: 36px!important;
