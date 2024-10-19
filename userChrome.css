@@ -1,17 +1,24 @@
 @import url("icons.css");
 
 :root {
-	--tab-font-size: 12px; /* Font size of the tab labels */
-	--tab-font-family: Terminus, sans-serif; /* The font used for the tab labels */
-	--max-tab-width: 100%; /* The maximum width a tab in the tab bar can use. Set this to none for no limit */
+	--tab-font-size: 12px;
+	--tab-font-family: Terminus, sans-serif;
+	--max-tab-width: 100%;
 	--tab-height: 20px;
 	--toolbar-start-end-padding: 2px!important;
 	--urlbar-container-height: 36px!important;
+  --bg1: #101010;
+  --bg2: #161616;
+  --bg3: #202020;
+  --fg1: #d4be98;
+  --fg2: #aa9e7a;
+  --fg3: #80775d;
+  --fg4: #635945;
 }
 
 toolbar#nav-bar {
   border: none!important;
-  background-color: #101010!important;
+  background-color: var(--bg1)!important;
 }
 
 #tabbrowser-tabs {
@@ -24,7 +31,7 @@ toolbar#nav-bar {
 #webextpanels-window,
 #webext-panels-stack,
 #webext-panels-browser {
-    background: #101010 !important;
+    background: var(--bg1)!important;
 }
 
 * {
@@ -38,20 +45,20 @@ toolbar#nav-bar {
 
 .tab-background:is([selected],
 [multiselected]) {
-    background-color: #161616!important;
+    background-color: var(--bg2)!important;
 }
 
 #TabsToolbar #firefox-view-button:hover:not([open]) > .toolbarbutton-icon,
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected],
 [multiselected]) {
-    background-color: #161616!important;
+    background-color: var(--bg2)!important;
 }
 
 .tabbrowser-tab {
-    color: #aa9e7a!important;
+    color: var(--fg2)!important;
 }
 .tabbrowser-tab[selected] {
-    color: #d4be98!important;
+    color: var(--fg1)!important;
 }
 
 .tab-label-container[textoverflow]:not([pinned]),
@@ -179,10 +186,10 @@ image.urlbar-icon.urlbar-go-button,
 
 #urlbar-background {
 	background-color: unset!important;
-	border-color: #101010!important;
+	border-color: transparent!important;
 }
 #urlbar[focused] {
-	background-color: #161616!important;
+	background-color: var(--bg2)!important;
 	text-align: start;
 }
 #urlbar {
@@ -196,79 +203,79 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
 #navigator-toolbox {
 	margin: 18px 18px 0px 18px;
   	padding: 6px 4px 2px 4px !important;
-  	border: 2px solid #202020!important;
+  	border: 2px solid var(--bg3)!important;
   	transition: border-color 0.2s ease;
   	&:hover,
   	&:focus {
-    	border-color: #aa9e7a !important;
+    	border-color: var(--fg2) !important;
   	}
 }
 
 #appcontent {
 	margin: 18px;
   	padding: 6px!important;
-  	border: 2px solid #202020!important;
+  	border: 2px solid var(--bg3)!important;
   	transition: border-color 0.2s ease;
   	&:hover,
   	&:focus {
-    	border-color: #aa9e7a !important;
+    	border-color: var(--fg2) !important;
   	}
 }
 
 #appcontent::before {
   content: "browser";
   transition: color 0.2s ease;
-  background-color: #101010;
+  background-color: var(--bg1);
   position: absolute;
-  color: #635945;
+  color: var(--fg4);
   margin: -18px 4px;
   padding: 0 4px;
   z-index: 2;
   font-size: 14px;
 }
 #appcontent:hover::before {
-  color: #aa9e7a;
+  color: var(--fg2);
 }
 
 #navigator-toolbox::before {
   content: "navbar";
   transition: color 0.2s ease;
-  background-color: #101010;
+  background-color: var(--bg1);
   position: absolute;
-  color: #635945;
+  color: var(--fg4);
   margin: -18px 4px;
   padding: 0 4px;
   z-index: 2;
   font-size: 14px;
 }
 #navigator-toolbox:hover::before {
-  color: #aa9e7a;
+  color: var(--fg2);
 }
 
 #sidebar-box {
 	margin: 18px 0px 18px 18px;
   	padding: 6px!important;
-  	border: 2px solid #202020!important;
+  	border: 2px solid var(--bg3)!important;
   	transition: border-color 0.2s ease;
   	&:hover,
   	&:focus {
-    	border-color: #aa9e7a !important;
+    	border-color: var(--fg2) !important;
   	}
 }
 
 #sidebar-box::before {
   content: "sidebar";
   transition: color 0.2s ease;
-  background-color: #101010;
+  background-color: var(--bg1);
   position: absolute;
-  color: #635945;
+  color: var(--fg4);
   margin: -18px 4px;
   padding: 0 4px;
   z-index: 2;
   font-size: 14px;
 }
 #sidebar-box:hover::before {
-  color: #aa9e7a;
+  color: var(--fg2);
 }
 
 /*temp fix for offscreen in hyprland*/
