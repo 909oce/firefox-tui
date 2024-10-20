@@ -34,6 +34,14 @@ toolbar#nav-bar {
     background: var(--bg1)!important;
 }
 
+.tab-icon-image {
+  opacity: 0.5!important;
+}
+
+.tab-icon-image:is([selected], [multiselected]) {
+  opacity: 1.0!important;
+}
+
 * {
     border-radius: 0px!important;
     box-shadow: none!important;
@@ -45,7 +53,7 @@ toolbar#nav-bar {
 
 .tab-background:is([selected],
 [multiselected]) {
-    background-color: var(--bg3)!important;
+    background-color: var(--bg2)!important;
 }
 
 #TabsToolbar #firefox-view-button:hover:not([open]) > .toolbarbutton-icon,
@@ -55,7 +63,7 @@ toolbar#nav-bar {
 }
 
 .tabbrowser-tab {
-    color: var(--fg2)!important;
+    color: var(--fg3)!important;
 }
 .tabbrowser-tab[selected] {
     color: var(--fg1)!important;
@@ -102,8 +110,7 @@ image.urlbar-icon.urlbar-go-button,
 .tab-icon-image {
 	padding-right: 5px!important;
 	height: 10px!important;
-	width: 10px!important;
-	opacity: 1!important;
+	width: 10px!important;	
 }
 
 #tab-notification-deck .container.infobar {
