@@ -1,0 +1,211 @@
+#vimiumHintMarkerContainer {
+    .internalVimiumHintMarker {
+        padding: 3px 4px;
+        background: #101010;
+        border: 2px solid #aa9e7a;
+        box-shadow: none;
+        border-radius:0px;
+        font-family:"Terminus";
+    }
+     span {
+        color: #D4BE98;
+        text-shadow: none;
+        border-radius:0px;
+        font-family:"Terminus";
+    }
+     .matchingCharacter {
+        color: #aa9e7a;
+        border-radius:0px;
+        font-family:"Terminus";
+        ~ span {
+            color: #b8bb26;
+            border-radius:0px;
+            font-family:"Terminus";
+        }
+    }
+}
+ #vomnibar {
+    background: #101010;
+    border: 2px solid #aa9e7a;
+    box-shadow: none;
+    animation: none;
+    border-radius:0px;
+    font-family:"Terminus";
+    .vomnibarSearchArea {
+        padding: 10px 30px;
+        color: #D4BE98;
+        background: transparent;
+        border: none;
+        border-radius:0px;
+        font-family:"Terminus";
+    }
+    #vomnibarInput {
+        padding: 0;
+        color: #D4BE98;
+        background: transparent;
+        box-shadow: none;
+        border-radius:0px;
+        font-family:"Terminus";
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        border-top: none;
+        border-radius:0px;
+        font-family:"Terminus";
+    }
+    li {
+        padding: 10px;
+        border-bottom: none;
+        border-radius:0px;
+        font-family:"Terminus";
+        .vomnibarTopHalf, .vomnibarBottomHalf {
+            display: flex;
+            padding: 3px 0;
+            border-radius:0px;
+            font-family:"Terminus";
+        }
+        .vomnibarTitle {
+            color: #D4BE98;
+            border-radius:0px;
+            font-family:"Terminus";
+        }
+        .vomnibarSource {
+            color: #fb4934;
+            border-radius:0px;
+            font-family:"Terminus";
+        }
+        .vomnibarUrl {
+            overflow: hidden;
+            color: #aa9e7a;
+            white-space: nowrap;
+             text-overflow: ellipsis;
+            border-radius:0px;
+            font-family:"Terminus";
+        }
+        .vomnibarMatch {
+            color: #b8bb26;
+            font-weight: normal;
+            border-radius:0px;
+            font-family:"Terminus";
+        }
+        .vomnibarTitle .vomnibarMatch {
+             color: #b8bb26;
+             border-radius:0px;
+             font-family:"Terminus";
+        }
+         &.vomnibarSelected {
+             background-color: #161616;
+             border-radius:0px;
+             font-family:"Terminus";
+        }
+    }
+}
+ div.vimiumHUD {
+    background: #101010;
+     border: 2px solid #aa9e7a;
+     box-shadow: none;
+     border-radius:0px;
+     bottom:14px;
+     font-family:"Terminus";
+     .hud-find {
+         display: flex;
+         border-radius:0px;
+         color: #D4BE98;
+         font-family:"Terminus";
+    }
+     span#hud-find-input {
+         position: relative;
+         width: 100%;
+         color: #D4BE98;
+         border-radius:0px;
+         font-family:"Terminus";
+         &::before {
+             position: sticky;
+             left: 0;
+             padding-right: 4px;
+             color: #D4BE98;
+             background: #101010;
+             border-radius:0px;
+             font-family:"Terminus";
+        }
+    }
+     #hud-match-count {
+         flex-shrink: 0;
+         float: none;
+         padding-left: 4px;
+         border-radius:0px;
+         font-family:"Terminus";
+    }
+     .hud-find, .vimiumHUDSearchArea {
+         background-color: transparent;
+         border: none;
+         border-radius:0px;
+         font-family:"Terminus";
+    }
+}
+div.vimiumHUD span#hud-match-count {
+  color: #aa9e7a;
+}
+
+div.vimiumHUD .vimiumHUDSearchAreaInner {
+               color: #D4BE98;
+             background: #101010;
+             border-radius:0px;
+             font-family:"Terminus";
+             height: unset;
+}
+
+#vomnibarInput::selection {
+    background-color: #D4BE98;
+    color: #101010;
+}
+
+div#vimiumHelpDialogContainer {
+    border: 2px solid #aa9e7a;
+    border-radius: 0px;
+    font-family: "Terminus";
+}
+div#vimiumHelpDialog {
+    background-color: #101010;
+    color: #D4BE98;
+    border-radius: 0px;
+    font-family: "Terminus";
+}
+span.vimiumHelpDialogKey {
+    border: none;
+    border-radius: 0px;
+    background-color: #D4BE98;
+    font-family: "Terminus";
+    color: #101010;
+}
+span#vimiumTitle, div#vimiumHelpDialog td.vimiumHelpSectionTitle {
+    font-family: "Terminus";
+    color: #D4BE98;
+}
+div#vimiumHelpDialog td.vimiumHelpDescription {
+    color: #aa9e7a;
+    font-family: "Terminus";
+}
+#vimiumTitle > span:first-child {
+    color: #D4BE98!important;
+    font-family: "Terminus";
+}
+
+div#vimiumHelpDialog div.vimiumDivider {
+    display: none;
+}
+
+div#vimiumHelpDialog a.closeButton:hover {
+    color: #e5d4a8;
+    font-family: "Terminus";
+}
+div#vimiumHelpDialog a.closeButton {
+    color: #D4BE98;
+    font-family: "Terminus";
+}
+div#vimiumHelpDialog a {
+    color: #b8bb26;
+    font-family: "Terminus";
+}
