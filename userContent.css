@@ -1,101 +1,300 @@
 @-moz-document url-prefix("about:"), @-moz-document url-prefix("chrome:") {
-    :root {
-        background-color: #101010!important;
-    }
+  :root {
+    background-color: #101010 !important;
+  }
 }
 
-@-moz-document url-prefix(about:){
-/*  Colors  */
-:root{--newtab-background-color: -moz-Dialog !important;
---in-content-background-color: -moz-Dialog !important;
---in-content-page-background: -moz-Dialog !important;
---in-content-table-background: -moz-Dialog !important;
---in-content-box-background-odd: -moz-Dialog !important;
---card-background-color: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important;
---in-content-box-background: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important;
---in-content-button-background: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important;
---in-content-box-background: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
---in-content-box-info-background: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
---message-bar-text-color: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
---newtab-background-color-secondary: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
---in-content-button-background-hover: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
---box-background: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
---button-background-color: color-mix(in srgb, currentColor 13%, -moz-Dialog) !important;
---button-hover-background-color: color-mix(in srgb, currentColor 15%, -moz-Dialog) !important;}}
+@-moz-document url-prefix(about:) {
+  /*  Colors  */
+  :root {
+    --newtab-background-color: -moz-Dialog !important;
+    --in-content-background-color: -moz-Dialog !important;
+    --in-content-page-background: -moz-Dialog !important;
+    --in-content-table-background: -moz-Dialog !important;
+    --in-content-box-background-odd: -moz-Dialog !important;
+    --card-background-color: color-mix(
+      in srgb,
+      currentColor 5%,
+      -moz-Dialog
+    ) !important;
+    --in-content-box-background: color-mix(
+      in srgb,
+      currentColor 5%,
+      -moz-Dialog
+    ) !important;
+    --in-content-button-background: color-mix(
+      in srgb,
+      currentColor 5%,
+      -moz-Dialog
+    ) !important;
+    --in-content-box-background: color-mix(
+      in srgb,
+      currentColor 13%,
+      -moz-Dialog
+    ) !important;
+    --in-content-box-info-background: color-mix(
+      in srgb,
+      currentColor 13%,
+      -moz-Dialog
+    ) !important;
+    --message-bar-text-color: color-mix(
+      in srgb,
+      currentColor 13%,
+      -moz-Dialog
+    ) !important;
+    --newtab-background-color-secondary: color-mix(
+      in srgb,
+      currentColor 13%,
+      -moz-Dialog
+    ) !important;
+    --in-content-button-background-hover: color-mix(
+      in srgb,
+      currentColor 13%,
+      -moz-Dialog
+    ) !important;
+    --box-background: color-mix(
+      in srgb,
+      currentColor 13%,
+      -moz-Dialog
+    ) !important;
+    --button-background-color: color-mix(
+      in srgb,
+      currentColor 13%,
+      -moz-Dialog
+    ) !important;
+    --button-hover-background-color: color-mix(
+      in srgb,
+      currentColor 15%,
+      -moz-Dialog
+    ) !important;
+  }
+}
 
 /*  Newtab  */
-@-moz-document url("about:home"), url("about:newtab"){
+@-moz-document url("about:home"), url("about:newtab") {
+  /*  Firefox home  */
+  .logo-and-wordmark > .wordmark {
+    height: 82px !important;
+    margin-inline-start: 16px !important;
+    width: 134px !important;
+    background-size: 134px !important;
+  }
+  @media screen and (min-width: 1325px) {
+    .ds-outer-wrapper-breakpoint-override main {
+      width: 986px !important;
+    }
+  }
+  @media screen and (min-width: 850px) and (max-width: 1324px) {
+    .ds-outer-wrapper-breakpoint-override main {
+      width: calc(78% + 1px) !important;
+    }
+  }
+  @media screen and (max-width: 849px) {
+    .ds-outer-wrapper-breakpoint-override main {
+      width: calc(55% + 168px) !important;
+    }
+  }
+  .outer-wrapper.ds-outer-wrapper-breakpoint-override {
+    padding: 30px 32px !important;
+  }
 
-/*  Firefox home  */
-.logo-and-wordmark > .wordmark{height: 82px !important; margin-inline-start: 16px !important; width: 134px !important; background-size: 134px !important}
-@media screen and (min-width:1325px){.ds-outer-wrapper-breakpoint-override main{width: 986px !important;}}
-@media screen and (min-width:850px) and (max-width:1324px){.ds-outer-wrapper-breakpoint-override main{width: calc(78% + 1px) !important;}}
-@media screen and (max-width:849px){.ds-outer-wrapper-breakpoint-override main{width: calc(55% + 168px) !important}}
-.outer-wrapper.ds-outer-wrapper-breakpoint-override{padding: 30px 32px !important}
-
-.search-wrapper .search-handoff-button .fake-caret {top: 13px !important; inset-inline-start: 48px !important}
-.search-wrapper .logo-and-wordmark{opacity: 0.9 !important; order: 1 !important; margin-bottom: 0 !important; flex: 1 !important; flex-basis: 20% !important}
-.search-wrapper .search-handoff-button .fake-caret{top: 13px !important; inset-inline-start: 48px !important}
-.search-wrapper .logo-and-wordmark{opacity: 0.9 !important; order: 1 !important; margin-bottom: 0 !important; flex: 1 !important; flex-basis: 20% !important}
-.outer-wrapper .search-wrapper{padding: 0px !important; display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; justify-content: center !important; align-items: center !important; align-content: space-around !important; gap: 20px 10px !important}
-.search-wrapper .logo-and-wordmark .logo{background-size: 60px !important; height: 60px !important; width: 60px !important}
-.search-wrapper .search-inner-wrapper{min-height: 42px !important; order: 2 !important; flex: 3 !important; flex-basis: 60% !important; top: 4px !important}
-.search-wrapper .search-inner-wrapper{min-height: 42px !important; order: 2 !important; flex: 3 !important; flex-basis: 60% !important; top: 4px !important}
-.outer-wrapper.ds-outer-wrapper-breakpoint-override.only-search.visible-logo{display: flex !important; padding-top: 0px !important;vertical-align: middle; }
-.customize-menu{border-radius: 10px 0 0 10px !important}
-#root > div{align-items: center; display: flex}}
-
-@-moz-document url("about:privatebrowsing"){
-
-/*  Firefox home private  */
-.logo-and-wordmark > .wordmark{height: 82px !important; margin-inline-start: 16px !important; width: 134px !important; background-size: 134px !important}
-@media screen and (min-width:1325px){.showPrivate.showSearch.container{width: 986px !important;}}
-@media screen and (min-width:850px) and (max-width:1324px){.showPrivate.showSearch.container{width: calc(78% + 1px) !important} body{padding: 48px calc(40px + 10%) !important;}}
-@media screen and (max-width:849px){.showPrivate.showSearch.container{width: calc(55% + 170px) !important}body{padding: 48px calc(25% - 80px) !important;}}
-.outer-wrapper.ds-outer-wrapper-breakpoint-override{padding: 30px 32px !important}
-
-
-#search-handoff-button{border-radius: 10px !important; background-color: color-mix(in srgb, FieldText 13%, -moz-Dialog) !important; border: none !important; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;}
-.fake-textbox{color: FieldText !important;}
-.search-inner-wrapper{min-width: 0 !important; flex-grow: 2 !important; max-width: 720px; height: 42px !important;}
-.showPrivate.showSearch.container{padding: 0px !important; display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; justify-content: center !important; align-items: center !important; align-content: space-around !important}
-.logo-and-wordmark .logo{background-size: 60px !important; height: 60px !important; width: 60px !important}
-.logo-and-wordmark{max-width: fit-content !important; max-height: 82px !important; opacity: 0.9 !important; margin-bottom: 0 !important; flex: 1 !important; flex-basis: 20% !important}
-.showPrivate.showSearch.container{display: flex !important; padding-top: 0px !important;vertical-align: middle; flex-direction: row; align-items: center; max-width: unset !important; width: -moz-available !important; gap: 20px 0px !important}
-.customize-menu{border-radius: 10px 0 0 10px !important}
-#root > div{align-items: center; display: flex}
-.info{display: none}
-.wordmark{background-size: 134px !important; margin-inline-start: 0 !important; fill: FieldText !important;}
+  .search-wrapper .search-handoff-button .fake-caret {
+    top: 13px !important;
+    inset-inline-start: 48px !important;
+  }
+  .search-wrapper .logo-and-wordmark {
+    opacity: 0.9 !important;
+    order: 1 !important;
+    margin-bottom: 0 !important;
+    flex: 1 !important;
+    flex-basis: 20% !important;
+  }
+  .search-wrapper .search-handoff-button .fake-caret {
+    top: 13px !important;
+    inset-inline-start: 48px !important;
+  }
+  .search-wrapper .logo-and-wordmark {
+    opacity: 0.9 !important;
+    order: 1 !important;
+    margin-bottom: 0 !important;
+    flex: 1 !important;
+    flex-basis: 20% !important;
+  }
+  .outer-wrapper .search-wrapper {
+    padding: 0px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: space-around !important;
+    gap: 20px 10px !important;
+  }
+  .search-wrapper .logo-and-wordmark .logo {
+    background-size: 60px !important;
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .search-wrapper .search-inner-wrapper {
+    min-height: 42px !important;
+    order: 2 !important;
+    flex: 3 !important;
+    flex-basis: 60% !important;
+    top: 4px !important;
+  }
+  .search-wrapper .search-inner-wrapper {
+    min-height: 42px !important;
+    order: 2 !important;
+    flex: 3 !important;
+    flex-basis: 60% !important;
+    top: 4px !important;
+  }
+  .outer-wrapper.ds-outer-wrapper-breakpoint-override.only-search.visible-logo {
+    display: flex !important;
+    padding-top: 0px !important;
+    vertical-align: middle;
+  }
+  .customize-menu {
+    border-radius: 10px 0 0 10px !important;
+  }
+  #root > div {
+    align-items: center;
+    display: flex;
+  }
 }
 
-@-moz-document url-prefix("moz-extension://d3391115-e10b-4955-b33a-98c2772fc30b") {
-  html, body, :root {
-    background: #101010!important;
+@-moz-document url("about:privatebrowsing") {
+  /*  Firefox home private  */
+  .logo-and-wordmark > .wordmark {
+    height: 82px !important;
+    margin-inline-start: 16px !important;
+    width: 134px !important;
+    background-size: 134px !important;
   }
-  html.theme_dark header:not(bit-callout header,
-  bit-dialog header,
-  popup-page header):not(.no-theme) {
-    background-color: #101010!important;
-    border-bottom-color: transparent!important;
-    color: #d4be98!important;
+  @media screen and (min-width: 1325px) {
+    .showPrivate.showSearch.container {
+      width: 986px !important;
+    }
+  }
+  @media screen and (min-width: 850px) and (max-width: 1324px) {
+    .showPrivate.showSearch.container {
+      width: calc(78% + 1px) !important;
+    }
+    body {
+      padding: 48px calc(40px + 10%) !important;
+    }
+  }
+  @media screen and (max-width: 849px) {
+    .showPrivate.showSearch.container {
+      width: calc(55% + 170px) !important;
+    }
+    body {
+      padding: 48px calc(25% - 80px) !important;
+    }
+  }
+  .outer-wrapper.ds-outer-wrapper-breakpoint-override {
+    padding: 30px 32px !important;
+  }
+
+  #search-handoff-button {
+    border-radius: 10px !important;
+    background-color: color-mix(in srgb, FieldText 13%, -moz-Dialog) !important;
+    border: none !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+  }
+  .fake-textbox {
+    color: FieldText !important;
+  }
+  .search-inner-wrapper {
+    min-width: 0 !important;
+    flex-grow: 2 !important;
+    max-width: 720px;
+    height: 42px !important;
+  }
+  .showPrivate.showSearch.container {
+    padding: 0px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: space-around !important;
+  }
+  .logo-and-wordmark .logo {
+    background-size: 60px !important;
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .logo-and-wordmark {
+    max-width: fit-content !important;
+    max-height: 82px !important;
+    opacity: 0.9 !important;
+    margin-bottom: 0 !important;
+    flex: 1 !important;
+    flex-basis: 20% !important;
+  }
+  .showPrivate.showSearch.container {
+    display: flex !important;
+    padding-top: 0px !important;
+    vertical-align: middle;
+    flex-direction: row;
+    align-items: center;
+    max-width: unset !important;
+    width: -moz-available !important;
+    gap: 20px 0px !important;
+  }
+  .customize-menu {
+    border-radius: 10px 0 0 10px !important;
+  }
+  #root > div {
+    align-items: center;
+    display: flex;
+  }
+  .info {
+    display: none;
+  }
+  .wordmark {
+    background-size: 134px !important;
+    margin-inline-start: 0 !important;
+    fill: FieldText !important;
+  }
+}
+
+@-moz-document url-prefix("moz-extension://d3391115-e10b-4955-b33a-98c2772fc30b")
+{
+  html,
+  body,
+  :root {
+    background: #101010 !important;
+  }
+  html.theme_dark
+    header:not(bit-callout header, bit-dialog header, popup-page header):not(
+      .no-theme
+    ) {
+    background-color: #101010 !important;
+    border-bottom-color: transparent !important;
+    color: #d4be98 !important;
   }
   html.theme_dark .box-content-row,
   html.theme_dark .box .box-content,
-  html.theme_dark header:not(bit-callout header, bit-dialog header, popup-page header) .search input {
-    background-color: #161616!important;
-    border-radius: 0px!important;
+  html.theme_dark
+    header:not(bit-callout header, bit-dialog header, popup-page header)
+    .search
+    input {
+    background-color: #161616 !important;
+    border-radius: 0px !important;
   }
   html.theme_dark main:not(popup-page main) {
-      background-color: #101010!important;
+    background-color: #101010 !important;
   }
   .ng-star-inserted:hover,
   .ng-star-inserted:focus {
-    background-color: #101010!important;
-    color: #e5d4a8!important;
+    background-color: #101010 !important;
+    color: #e5d4a8 !important;
   }
   .row-main.ng-star-inserted:hover,
   .row-main.ng-star-inserted:focus {
-    background-color: #161616!important;
+    background-color: #161616 !important;
   }
   html.theme_dark input,
   html.theme_dark body,
@@ -103,34 +302,37 @@
   html.theme_dark .box .box-header,
   html.theme_dark .box.list .box-content .box-content-row,
   html.theme_dark .tabs ul li button {
-    color: #d4be98!important;
+    color: #d4be98 !important;
   }
   html.theme_dark .box-content-row label,
   html.theme_dark .box .box-footer,
   html.theme_dark .box-content-row .detail,
-  html.theme_dark header:not(bit-callout header, bit-dialog header, popup-page header) .search .bwi,
+  html.theme_dark
+    header:not(bit-callout header, bit-dialog header, popup-page header)
+    .search
+    .bwi,
   .bwi-clock::before,
   html.theme_dark .box-content-row .row-sub-icon,
   html.theme_dark .box-content-row .row-sub-label + i.bwi,
   html.theme_dark .box-content-row .row-sub-label,
   html.theme_dark .box-content-row .icon {
-    color: #aa9e7a!important;
+    color: #aa9e7a !important;
   }
   html.theme_dark .box-content-row .action-buttons .row-btn {
-    color: #aa9e7a!important;
+    color: #aa9e7a !important;
     &:hover {
-      color: #d4be98!important;
+      color: #d4be98 !important;
     }
   }
   html.theme_dark .tabs {
-    background-color: #101010!important;
-    border-top-color: transparent!important;
+    background-color: #101010 !important;
+    border-top-color: transparent !important;
   }
   button[title="Add item"]:hover {
-    background: #101010!important;
-    color: #d4be98!important;
+    background: #101010 !important;
+    color: #d4be98 !important;
   }
   html.theme_dark .tabs ul li button:hover {
-    background-color: #161616!important;
+    background-color: #161616 !important;
   }
 }
