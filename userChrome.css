@@ -65,6 +65,9 @@ toolbar#nav-bar {
 .tabbrowser-tab {
     color: var(--fg3)!important;
 }
+.tabbrowser-tab:hover {
+  color: var(--fg2)!important;
+}
 .tabbrowser-tab[selected] {
     color: var(--fg1)!important;
 }
