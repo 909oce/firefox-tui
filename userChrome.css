@@ -21,6 +21,10 @@ toolbar#nav-bar {
   background-color: var(--bg1)!important;
 }
 
+#tabbrowser-tab-tooltip {
+  display: none !important;
+}
+
 #tabbrowser-tabs {
 	border-inline-start: none!important;
 	padding-inline-start: 0px!important;
