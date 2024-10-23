@@ -110,6 +110,7 @@ tab[muted] .tab-label::before,
 box#identity-box,
 image.urlbar-icon.urlbar-go-button,
 #scrollbutton-down,
+#reader-mode-button,
 .tab-loading-burst {
     display: none!important;
 }
