@@ -226,18 +226,18 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
   	}
 }
 
-#appcontent {
-	margin: 18px;
-  	padding: 6px!important;
-  	border: 2px solid var(--bg3)!important;
-  	transition: border-color 0.2s ease;
-  	&:hover,
-  	&:focus {
-    	border-color: var(--fg2) !important;
-  	}
+#tabbrowser-tabbox {
+	margin: 18px!important;
+  padding: 6px!important;
+  border: 2px solid var(--bg3)!important;
+  transition: border-color 0.2s ease;
+  &:hover,
+  &:focus {
+  	border-color: var(--fg2) !important;
+  }
 }
 
-#appcontent::before {
+#tabbrowser-tabbox::before {
   content: "browser";
   transition: color 0.2s ease;
   background-color: var(--bg1);
@@ -248,7 +248,7 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
   z-index: 2;
   font-size: 14px;
 }
-#appcontent:hover::before {
+#tabbrowser-tabbox:hover::before {
   color: var(--fg2);
 }
 
@@ -299,12 +299,12 @@ panel#notification-popup {
 }
 
 :root[inFullscreen="true"] {
-  #appcontent, #navigator-toolbox, #sidebar-box {
+  #tabbrowser-tabbox, #navigator-toolbox, #sidebar-box {
     margin: 0px;
     border: none!important;
     padding: 0px!important;
   }
-  #appcontent::before, #sidebar-box::before, #navigator-toolbox::before {
+  #tabbrowser-tabbox::before, #sidebar-box::before, #navigator-toolbox::before {
     display:none!important;
   }
 }
