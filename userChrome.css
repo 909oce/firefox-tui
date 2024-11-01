@@ -340,6 +340,9 @@ panel#notification-popup {
     border: none!important;
     padding: 0px!important;
   }
+  #tabbrowser-tabbox {
+    margin: 0px!important;
+  }
   #tabbrowser-tabbox::before, #sidebar-box::before, #navigator-toolbox::before {
     display:none!important;
   }
