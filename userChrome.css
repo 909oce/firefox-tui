@@ -1,12 +1,15 @@
 @import url("icons.css");
 
+* {
+  font-family: 'system-ui'!important;
+}
+
 :root {
-	--tab-font-size: 12px;
-	--tab-font-family: Terminus, sans-serif;
-	--max-tab-width: 25%;
-	--tab-height: 20px;
-	--toolbar-start-end-padding: 2px!important;
-	--urlbar-container-height: 36px!important;
+  --tab-font-size: 12px;
+  --max-tab-width: 25%;
+  --tab-height: 20px;
+  --toolbar-start-end-padding: 2px!important;
+  --urlbar-container-height: 36px!important;
   --bg1: #101010;
   --bg2: #161616;
   --bg3: #202020;
@@ -14,6 +17,24 @@
   --fg2: #aa9e7a;
   --fg3: #80775d;
   --fg4: #635945;
+  --panel-item-hover-bgcolor: var(--bg3)!important;
+  --button-background-color: var(--bg3)!important;
+  --button-background-color-hover: var(--bg1)!important;
+  --panel-border-color: transparent!important;
+  --focus-outline: transparent!important;
+  --urlbarView-hover-background: var(--bg3)!important;
+  --urlbarView-result-button-hover-background-color: var(--fg1)!important;
+  --urlbarView-result-button-hover-color: var(--bg1)!important;
+  --toolbarbutton-active-background: var(--bg2)!important;
+  --toolbarbutton-hover-background: var(--bg2)!important;
+  --arrowpanel-background: var(--bg2)!important;
+  --arrowpanel-border-color: transparent!important;
+  --panel-item-active-bgcolor: var(--bg3)!important;
+}
+
+::selection {
+  background: var(--fg1)!important;
+  color: var(--bg1)!important;
 }
 
 toolbar#nav-bar {
@@ -26,16 +47,16 @@ toolbar#nav-bar {
 }
 
 #tabbrowser-tabs {
-	border-inline-start: none!important;
-	padding-inline-start: 0px!important;
-	margin-inline-start: 0px!important;
+  border-inline-start: none!important;
+  padding-inline-start: 0px!important;
+  margin-inline-start: 0px!important;
 }
 
 #tabbrowser-tabpanels,
 #webextpanels-window,
 #webext-panels-stack,
 #webext-panels-browser {
-    background: var(--bg1)!important;
+  background: var(--bg1)!important;
 }
 
 .tab-icon-image {
@@ -141,7 +162,6 @@ image.urlbar-icon.urlbar-go-button,
 .tabbrowser-tab * {
 	margin:0 !important;
 	border-radius: 0 !important;
-	font-family: var(--tab-font-family) !important;
 }
 .tabbrowser-tab {
 	height: var(--tab-height);
