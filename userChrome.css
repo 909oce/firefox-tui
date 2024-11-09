@@ -5,11 +5,6 @@
 }
 
 :root {
-  --tab-font-size: 12px;
-  --max-tab-width: 25%;
-  --tab-height: 20px;
-  --toolbar-start-end-padding: 2px!important;
-  --urlbar-container-height: 36px!important;
   --bg1: #101010;
   --bg2: #161616;
   --bg3: #202020;
@@ -17,6 +12,11 @@
   --fg2: #aa9e7a;
   --fg3: #80775d;
   --fg4: #635945;
+  --tab-font-size: 12px;
+  --max-tab-width: 25%;
+  --tab-height: 20px;
+  --toolbar-start-end-padding: 2px!important;
+  --urlbar-container-height: 36px!important;
   --panel-item-hover-bgcolor: var(--bg3)!important;
   --button-background-color: var(--bg3)!important;
   --button-background-color-hover: var(--bg1)!important;

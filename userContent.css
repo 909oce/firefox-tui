@@ -1,79 +1,65 @@
 @import url(userContent/bitwarden.css);
 
+:root {
+  --bg1: #101010;
+  --bg2: #161616;
+  --bg3: #202020;
+  --fg1: #d4be98;
+  --fg2: #aa9e7a;
+  --fg3: #80775d;
+  --fg4: #635945;
+}
+
 @-moz-document url-prefix("about:"), @-moz-document url-prefix("chrome:") {
+  * {
+    border-radius: 0px!important;
+  }
   :root {
-    background-color: #101010 !important;
+    background-color: var(--bg1)!important;
+    font-family: 'xos4 Terminus'!important;
   }
 }
 
 @-moz-document url-prefix(about:) {
+  * {
+    border-radius: 0px!important;
+  }
   /*  Colors  */
   :root {
-    --newtab-background-color: -moz-Dialog !important;
-    --in-content-background-color: -moz-Dialog !important;
-    --in-content-page-background: -moz-Dialog !important;
-    --in-content-table-background: -moz-Dialog !important;
-    --in-content-box-background-odd: -moz-Dialog !important;
-    --card-background-color: color-mix(
-      in srgb,
-      currentColor 5%,
-      -moz-Dialog
-    ) !important;
-    --in-content-box-background: color-mix(
-      in srgb,
-      currentColor 5%,
-      -moz-Dialog
-    ) !important;
-    --in-content-button-background: color-mix(
-      in srgb,
-      currentColor 5%,
-      -moz-Dialog
-    ) !important;
-    --in-content-box-background: color-mix(
-      in srgb,
-      currentColor 13%,
-      -moz-Dialog
-    ) !important;
-    --in-content-box-info-background: color-mix(
-      in srgb,
-      currentColor 13%,
-      -moz-Dialog
-    ) !important;
-    --message-bar-text-color: color-mix(
-      in srgb,
-      currentColor 13%,
-      -moz-Dialog
-    ) !important;
-    --newtab-background-color-secondary: color-mix(
-      in srgb,
-      currentColor 13%,
-      -moz-Dialog
-    ) !important;
-    --in-content-button-background-hover: color-mix(
-      in srgb,
-      currentColor 13%,
-      -moz-Dialog
-    ) !important;
-    --box-background: color-mix(
-      in srgb,
-      currentColor 13%,
-      -moz-Dialog
-    ) !important;
-    --button-background-color: color-mix(
-      in srgb,
-      currentColor 13%,
-      -moz-Dialog
-    ) !important;
-    --button-hover-background-color: color-mix(
-      in srgb,
-      currentColor 15%,
-      -moz-Dialog
-    ) !important;
+    font-family: 'xos4 Terminus'!important;
+    --in-content-page-color: var(--fg1)!important;
+    --newtab-background-color: var(--bg1)!important;
+    --in-content-background-color: var(--bg1)!important;
+    --in-content-page-background: var(--bg1)!important;
+    --in-content-table-background: var(--bg1)!important;
+    --in-content-box-background-odd: var(--bg1)!important;
+    --in-content-button-background-hover: var(--bg3)!important;
+    --in-content-button-background: var(--bg2)!important;
+    --in-content-accent-color: var(--fg1)!important;
+    --in-content-box-border-color: transparent!important;
+    --in-content-box-background: var(--bg2)!important;
+  }
+  #categories > .category[selected],
+  #categories > .category.selected {
+    color: var(--fg1)!important;
+    background-color: var(--bg3)!important;
+    &:hover {
+      background-color: var(--bg3)!important;
+    }
+  }
+  #categories > .category:hover {
+    background-color: var(--bg2)!important;
+  }
+  .textbox-search-sign {
+    display: none!important;
   }
 }
 
 /*  Newtab  */
 @-moz-document url("about:home"), url("about:newtab") {
+  :root {
+    font-family: 'xos4 Terminus'!important;
+  }
   /*  Firefox home  */
   .logo-and-wordmark > .wordmark {
     height: 82px !important;
