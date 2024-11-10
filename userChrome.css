@@ -132,6 +132,7 @@ box#identity-box,
 image.urlbar-icon.urlbar-go-button,
 #scrollbutton-down,
 #reader-mode-button,
+box#sidebar-header,
 .tab-loading-burst {
     display: none!important;
 }
@@ -187,8 +188,9 @@ image.urlbar-icon.urlbar-go-button,
 }
 
 #titlebar {
-	-moz-appearance: none !important;
+  display: none!important;
 }
+
 #TabsToolbar {
 	min-height: 0px !important;
 }
@@ -237,7 +239,7 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
 
 #navigator-toolbox {
 	margin: 18px 18px 0px 18px;
-  	padding: 6px 4px 2px 4px !important;
+  	padding: 2px 4px 2px 4px !important;
   	border: 2px solid var(--bg3)!important;
   	transition: border-color 0.2s ease;
   	&:hover,
@@ -278,7 +280,7 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
   background-color: var(--bg1);
   position: absolute;
   color: var(--fg4);
-  margin: -17px 4px;
+  margin: -13px 4px;
   padding: 0 4px;
   z-index: 2;
   font-size: 14px;
@@ -288,14 +290,15 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
 }
 
 #sidebar-box {
+  background: var(--bg1)!important;
 	margin: 18px 0px 18px 18px;
-  	padding: 6px!important;
-  	border: 2px solid var(--bg3)!important;
-  	transition: border-color 0.2s ease;
-  	&:hover,
-  	&:focus {
-    	border-color: var(--fg2) !important;
-  	}
+  padding: 6px!important;
+  border: 2px solid var(--bg3)!important;
+  transition: border-color 0.2s ease;
+  &:hover,
+  &:focus {
+    border-color: var(--fg2) !important;
+  }
 }
 
 #sidebar-box::before {
