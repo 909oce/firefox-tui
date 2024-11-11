@@ -121,7 +121,6 @@ tab[muted] .tab-label::before,
 #private-browsing-indicator-with-label,
 #forward-button,
 #back-button,
-#sidebar-splitter,
 .titlebar-buttonbox-container,
 #titlebar spacer,
 #firefox-view-button,
@@ -249,7 +248,7 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
 }
 
 #tabbrowser-tabbox {
-	margin: 18px!important;
+	margin: 18px 18px 18px 0px!important;
   padding: 6px!important;
   border: 2px solid var(--bg3)!important;
   transition: border-color 0.2s ease;
@@ -289,14 +288,19 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
   color: var(--fg2);
 }
 
+#sidebar-splitter {
+  opacity: 0!important;
+  width: 18px!important;
+}
+
 #sidebar-box {
   background: var(--bg1)!important;
 	margin: 18px 0px 18px 18px;
   padding: 6px!important;
   border: 2px solid var(--bg3)!important;
   transition: border-color 0.2s ease;
-  max-width: 200px!important;
-  min-width: 200px!important;
+  max-width: 400px!important;
+  min-width: 100px!important;
   &:hover,
   &:focus {
     border-color: var(--fg2) !important;
@@ -334,5 +338,8 @@ panel#notification-popup {
   }
   #tabbrowser-tabbox::before, #sidebar-box::before, #navigator-toolbox::before {
     display:none!important;
+  }
+  #sidebar-splitter {
+    display: none!important;
   }
 }
