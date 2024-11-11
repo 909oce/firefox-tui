@@ -292,6 +292,9 @@ fill: currentColor !important; -moz-context-properties: fill !important; list-st
   opacity: 0!important;
   width: 18px!important;
 }
+#sidebar-splitter[hidden=true] + #tabbrowser-tabbox {
+  margin: 18px!important;
+}
 
 #sidebar-box {
   background: var(--bg1)!important;
