@@ -1,5 +1,5 @@
 {
-  "keyMappings": "map K previousTab\nmap J nextTab",
+  "keyMappings": "map K previousTab\nmap J nextTab\nunmap <c-e>\nunmap <c-y>",
   "grabBackFocus": true,
   "searchEngines": "",
   "searchUrl": "https://duckduckgo.com/?q=",
