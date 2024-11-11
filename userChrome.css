@@ -345,4 +345,7 @@ panel#notification-popup {
   #sidebar-splitter {
     display: none!important;
   }
+  #sidebar-splitter[hidden=true] + #tabbrowser-tabbox {
+    margin: 0px!important;
+  }
 }
