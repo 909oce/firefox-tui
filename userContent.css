@@ -38,6 +38,7 @@
     --in-content-accent-color: var(--fg1)!important;
     --in-content-box-border-color: transparent!important;
     --in-content-box-background: var(--bg2)!important;
+    --in-content-focus-outline: 2px solid var(--fg1)!important;
   }
   #categories > .category[selected],
   #categories > .category.selected {
