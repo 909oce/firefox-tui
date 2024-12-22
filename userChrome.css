@@ -129,13 +129,19 @@ tab[muted] .tab-label::before,
 #scrollbutton-up,
 .tab-secondary-label,
 #alltabs-button,
-box#identity-box,
 image.urlbar-icon.urlbar-go-button,
 #scrollbutton-down,
 #reader-mode-button,
 box#sidebar-header,
 .tab-loading-burst {
   display: none !important;
+}
+
+box#identity-box {
+  opacity: 0;
+  width: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .tab-icon-image {
