@@ -289,7 +289,7 @@ box#identity-box {
   background-color: var(--bg1);
   position: absolute;
   color: var(--fg4);
-  margin: -17px 4px;
+  margin: -17px 2px;
   padding: 0 4px;
   z-index: 2;
   font-size: 14px;
@@ -345,7 +345,7 @@ box#identity-box {
   background-color: var(--bg1);
   position: absolute;
   color: var(--fg4);
-  margin: -17px 4px;
+  margin: -17px 2px;
   padding: 0 4px;
   z-index: 2;
   font-size: 14px;
