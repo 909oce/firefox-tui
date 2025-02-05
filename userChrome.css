@@ -360,6 +360,10 @@ panel#notification-popup {
   margin-right: -1000px !important;
 }
 
+#browser:not(.browser-toolbox-background) {
+  background-color: var(--bg1) !important;
+}
+
 :root[inFullscreen="true"] {
 
   #tabbrowser-tabbox,
