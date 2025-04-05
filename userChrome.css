@@ -30,6 +30,7 @@
   --arrowpanel-background: var(--bg2) !important;
   --arrowpanel-border-color: transparent !important;
   --panel-item-active-bgcolor: var(--bg3) !important;
+  --link-color: var(--fg2) !important;
 }
 
 ::selection {
