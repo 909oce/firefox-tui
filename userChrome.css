@@ -321,7 +321,7 @@ box#identity-box {
   width: 18px !important;
 }
 
-#sidebar-splitter[hidden=true]+#tabbrowser-tabbox {
+#sidebar-wrapper:has(#sidebar-splitter[hidden])+#tabbrowser-tabbox {
   margin: 18px !important;
 }
 
