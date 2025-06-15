@@ -19,6 +19,12 @@
   }
 }
 
+@-moz-document url-prefix(about:newtab) {
+  html {
+    background: var(--bg1);
+  }
+}
+
 @-moz-document url-prefix(about:) {
   * {
     border-radius: 0px !important;
