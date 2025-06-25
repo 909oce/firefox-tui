@@ -391,3 +391,7 @@ panel#notification-popup {
     margin: 0px !important;
   }
 }
+
+#urlbar-searchmode-switcher {
+  display: none !important;
+}
